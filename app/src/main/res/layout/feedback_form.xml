@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    android:background="#CCCCFF"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Describe your issue"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="5dp"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="5dp"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/feedback_editText"
+            android:gravity="start"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:background="@null"
+            android:layout_height="match_parent"
+            android:hint="Write your feedback"/>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:textStyle="bold"
+        android:id="@+id/submit"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="22sp"
+        />
+
+</LinearLayout>
